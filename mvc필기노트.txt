@@ -119,8 +119,28 @@
 		.- 보통은 Jar파일로 하면되는데 JSP공부 때문에 War파일로 생성
 		.- 설치관련은 이제 어렵진 않고 환경설정도 lombok이랑 annotation이랑 gradle만 바꿔주면 되니까 아직은 쉬움
 
-	2. 
+2022-03-10
 
+	2. Hello 서블릿
+		.- 메인 메소드에 @ServletComponentScan를 추가 ==> 서블릿 자동 등록을 위해서
+		.- HelloServlet class에 extends HttpServlet추가, @WebServlet(name = "helloServlet", urlPatterns = "/hello") 추가
+							.- /hello라는 url요청 시 helloServlet이라는 class로 ㄱㄱ
+
+		.- ctrl + o 누르고 service검색해서 자물쇠 잠긴거 누르면 오버라이딩 자동으로 됨
+		.- 첨에 변수명 req, resp로 되어있는거 request, response로 변경
+
+		.- request.getParameter("username"); 알고
+		.- response.setContentType("text/plain"); 헤더에 들어가는 타입
+        		.- response.setCharacterEncoding("utf-8"); 헤더에 들어가서 한글 인코딩
+        		.- response.getWriter().write("hello " + username); body에 출력
+
+		** HTTP 요청 메세지 로그 확인하기 **
+		.- application.properties에 logging.level.org.apache.coyote.http11=debug 추가
+		.- 참고로 개발서버에서쓰지 운영서버에선 쓰지않음
+
+	3. HttpServletRequest 개요
+		.- 
+ 
 				
 			
 
