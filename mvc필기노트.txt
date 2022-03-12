@@ -171,7 +171,12 @@
 			.- request.getParameterValues()를 사용해야함 (request.getParameter()는 단일 대상값만 가능하므로)
 			.- 중복일때 request.getParameter()를 사용시 제일 앞에 파라미터가 반환됨
 			
+	7. HTTP 요청 데이터 -POST HTML Form
+		.- request.getParameter() 는 GET URL 쿼리 파라미터 형식도 지원하고, POST HTML Form형식도 둘 다 지원
+		.- 폼으로 데이터를 전송하는 형식을 application/x-www-form-urlencoded 라 한다
+		.- Postman을 활용하면 굳이 html파일을 만들어서 거기서 전송하지 않아도 됨!! (이래서 쓰는거였군!)
 
+	8. 
 				
 			
 
