@@ -184,8 +184,16 @@
 		.- JSON결과를 파싱해서 사용할 수 있는 자바 객체로 변환하려면, Jackson, Gson 같은 JSON변환 라이브러리를 추가해야함
 		.- 스프링 부트로 Spring MVC를 선택하면 기본으로 Jackson라이브러리( ObjectMapper )를 함께 제공함
 
-	10. 
+	10. HttpServletResponse - 기본 사용법
+		.- HttpServletResponse의 역할
+			.- HTTP 응답 메세지 생성 : HTTP응답코드 지정, 헤더 및 바디 생성
+			.- 편의 기능 제공
+				1_ Content-Type
+				2_ 쿠키
+				3_ Redirect
+			.- hello.servlet.basic.response.ResponseHeaderServlet에서 코드 및 노트 확인
 
+	11. 
 				
 			
 
