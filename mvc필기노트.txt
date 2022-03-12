@@ -193,7 +193,17 @@
 				3_ Redirect
 			.- hello.servlet.basic.response.ResponseHeaderServlet에서 코드 및 노트 확인
 
-	11. 
+	11. HTTP 응답 데이터 - 단순 텍스트, HTML
+		.- 단순 텍스트 응답
+			.- 앞에서 했던 writer.println("ok")
+		.- HTML 응답
+		.- HTTP API - MessageBody JSON응답
+
+		.- HTML 응답
+			.- HTTP 응답으로 HTML을 반환할 때는 content-type을 text/html로 지정해야 함
+			.- 실행 후 소스보기하면 text가 아닌 html형식으로 되어있는걸 확인
+
+	12. 
 				
 			
 
