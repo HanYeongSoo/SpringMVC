@@ -150,8 +150,28 @@
 	4. HttpServletRequest - 기본 사용법
 		.- 필기노트 및 코드 참고
 
-	5. 
+2022-03-12
+	5. HTTP 요청 데이터 - 개요
+		.- GET
+			.- url주소에 ?username=han&age=32 같은 형식
+
+		.- POST - HTML Form
+			.- content-type:application/x-www-form-urlencoded
+			.- 메세지 바디에 쿼리 파라미터 형식으로 전달 username=han&age=32
+			.- 회원가입, 상품 주문, HTML Form 사용
+
+		.- HTTP message body에 직접 데이터를 담아서
+			.- HTTP API형식에서 주로 사용
+			.- 데이터형식은 주로 JSON
+			.- POST, PUT, PATCH
  
+	6. HTTP 요청 데이터 - GET 쿼리 파라미터
+		.- 만약 파라미터 이름이 중복이면??
+			.- username=hello&username=han 이런식이면
+			.- request.getParameterValues()를 사용해야함 (request.getParameter()는 단일 대상값만 가능하므로)
+			.- 중복일때 request.getParameter()를 사용시 제일 앞에 파라미터가 반환됨
+			
+
 				
 			
 
