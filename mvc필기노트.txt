@@ -176,7 +176,11 @@
 		.- 폼으로 데이터를 전송하는 형식을 application/x-www-form-urlencoded 라 한다
 		.- Postman을 활용하면 굳이 html파일을 만들어서 거기서 전송하지 않아도 됨!! (이래서 쓰는거였군!)
 
-	8. 
+	8. HTTP 요청 데이터 - API 메세지 바디 - 단순 텍스트
+		.- inputStream은 byte 코드를 반환한다. byte 코드를 우리가 읽을 수 있는 문자(String)로 보려면 문자표
+			(Charset)를 지정해주어야 한다. 여기서는 UTF_8 Charset을 지정해주었다
+
+	
 				
 			
 
