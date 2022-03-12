@@ -180,7 +180,12 @@
 		.- inputStream은 byte 코드를 반환한다. byte 코드를 우리가 읽을 수 있는 문자(String)로 보려면 문자표
 			(Charset)를 지정해주어야 한다. 여기서는 UTF_8 Charset을 지정해주었다
 
-	
+	9. HTTP 요청 데이터 - API 메세지 바디 - JSON
+		.- JSON결과를 파싱해서 사용할 수 있는 자바 객체로 변환하려면, Jackson, Gson 같은 JSON변환 라이브러리를 추가해야함
+		.- 스프링 부트로 Spring MVC를 선택하면 기본으로 Jackson라이브러리( ObjectMapper )를 함께 제공함
+
+	10. 
+
 				
 			
 
