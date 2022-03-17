@@ -232,7 +232,24 @@
 
 		.- 이런식으로 근데 짠 jsp는 유지보수가 딱봐도 어려워보이지...? 그래서 나온게 MVC!!
 
-	
+2022-03-17
+	4. MVC패턴 - 개요
+		.- Controller : 비즈니스 로직을 모델에 담아서 전달
+		.- Model : 데이터 전달 및 데이터 참조
+		.- View : 화면 그리기 집중
+		.- 근데 알고있듯이 Controller에서 다 처리하면 너무 복잡하지? 그래서 Service와 Repository가 있지
+
+	5. MVC패턴 - 적용
+		.- dispatcher.forward() : 다른 서블릿이나 JSP로 이동할수 있는 기능, 서버 내부에서 호출
+		.- WEB-INF 경로 안에 있을시 외부에서 .jsp로 요청이 불가능
+		.- redirect vs forward ??
+			.- redirect : 실제 클라이언트(웹 브라우저)에 응답이 나갔다가, 클라이언트가 redirect경로로 다시 요청 -> 클라이언트가 인지 o, URL경로도 변경
+			.- forward : 서버 내부에서 호출되므로 클라이언트가 인지 x
+		
+		.- 절대경로 vs 상대경로
+			.- form action="/save"(절대경로) 와 action="save"(상대경로)차이
+		
+		.- 
 			
 
 
