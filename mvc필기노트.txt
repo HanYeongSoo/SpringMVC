@@ -259,7 +259,28 @@
 
 		.- 공통 처리 문제를 해결하려면 '프론트 컨틀롤러(Front Controller)패턴' 을 도입하면 해결할 수 있음
 
-	
+** 서블릿, JSP, MVC 패턴 종료**
+
+** MVC 프레임워크 만들기 **
+
+	1. 프론트 컨트롤러 - 개요
+		.- FrontController 특징
+			.1_ 프론트 컨트롤러 서블릿 하나로 클라이언트 요청을 받고, 그 요청에 맞는 컨트롤러를 찾아서 호출
+			.2_ 공통처리가 가능하고 서블릿을 여기서만 사용해도 됨
+		
+		.- 스프링 웹 MVC와 프론트 컨트롤러
+			.- FrontController , DispatcherServlet !!!
+
+	2. 프론트 컨트롤러 도입 - v1 
+		.- ControllerV1 인터페이스 구현
+			.- 각 컨트롤러들은 이 인터페이스를 구현하면 된다. 
+			.- 프론트 컨트롤러는 이 인터페이스를 호출해서 구현과 관계없이 로직의 일관성을 가져갈 수 있다
+
+		.- 각 Controller들 생성 (V1,save, List 관련)
+			.- private Map<String, ControllerV1> controllerMap = new HashMap<>(); 선언
+			.- key : 매핑 URL ,  value : 호출될 컨트롤러\
+
+	3. 
 		
 			
 
