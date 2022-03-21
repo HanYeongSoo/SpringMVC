@@ -280,8 +280,15 @@
 			.- private Map<String, ControllerV1> controllerMap = new HashMap<>(); 선언
 			.- key : 매핑 URL ,  value : 호출될 컨트롤러\
 
-	3. 
-		
+2022-03-21
+	3. View 분리 - v2
+		.- myView를 생성해서 viewPath쪽에 중복되는 코드를 별도로 처리해줌
+			.- String viewPath를 선언하고 생성자를 만든 후 void render클래스로 나머지 로직을 수행함
+	
+		.- 각 controller에서는 dispatcher.forward()를 직접 호출하지 않고 return을 new Myview(경로)로 반환하면 됨
+
+	
+	4. 
 			
 
 
