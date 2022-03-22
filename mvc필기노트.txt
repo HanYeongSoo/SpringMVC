@@ -287,8 +287,19 @@
 	
 		.- 각 controller에서는 dispatcher.forward()를 직접 호출하지 않고 return을 new Myview(경로)로 반환하면 됨
 
-	
-	4. 
+2022-03-22	
+	4. Model 추가 - v3 (어려우니까 두번 세번 들어라~)
+		.- 서블릿 종속성 제거
+			.- HttpServletRequest, HttpServletResponse 제거
+		.- 뷰 이름 중복 제거
+			.- /WEB-INF/views/new-form.jsp => new-form 으로 변경
+			.- /WEB-INF/views/save-result.jsp => save-result
+			.- /WEB-INF/views/members.jsp => members
+			.- 이렇게 하면 향후 뷰의 폴더 위치가 변경되도 프론트컨트롤러만 수정하면 됨
+
+		.- ModelView라는 class를 생성 여기엔 view 이름과 model 객체가 생성됨
+		.- 글고 이제 모든 컨트롤러엔 서블릿 기술이 없음
+		.- 
 			
 
 
