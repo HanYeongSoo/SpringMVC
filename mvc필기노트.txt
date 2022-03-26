@@ -325,7 +325,16 @@
 
 		.- Controller -> Handler로 명칭 바꿔서 사용
 		.- Map<String, String> 에서 Map<String, Object>로 바꿔서 이제 어떤 값이든 받을 수 있음
-		.- 
+
+	7. 유연한 컨트롤러2 -v5
+		.- ControllerV4 기능을 사용하고자 initHandlerMappingMap과 initHandlerAdapters에 V4관련 코드를 추가함
+		.- 이러면 핸들러에서 controllerV4인지 V3인지 판단을 하고 handler를 들어온 컨트롤러에 캐스팅하고 paramMap과 model생성 후
+			viewName을 반환함
+		
+		.- 어댑터가 호출하는 ControllerV4 는 뷰의 이름을 반환한다. 그런데 어댑터는 뷰의 이름이 아니라
+			ModelView 를 만들어서 반환해야 한다. 여기서 어댑터가 꼭 필요한 이유가 나온다.
+			ControllerV4 는 뷰의 이름을 반환했지만, 어댑터는 이것을 ModelView로 만들어서 형식을 맞추어
+			반환한다. 마치 110v 전기 콘센트를 220v 전기 콘센트로 변경하듯이!
 
 
 
