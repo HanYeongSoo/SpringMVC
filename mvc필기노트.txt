@@ -435,7 +435,8 @@
 			메서드 레벨 @RequestMapping("/save") /springmvc/v2/members/save
 			메서드 레벨 @RequestMapping /springmvc/v2/members
 
-	6. 
+	6. 스프링 MVC - 실용적인 방식
+		.- 
 
 
 
